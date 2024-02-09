@@ -1,3 +1,9 @@
+/**
+ * Programmer: Muhammed Owais 
+ * Desc: Q1
+ * Date: 09/02/2024
+ * Roll-No: 23K-0047
+ */ 
 #include <iostream>
 
 using namespace std;
