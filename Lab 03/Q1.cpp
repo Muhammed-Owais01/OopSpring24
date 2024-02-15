@@ -1,6 +1,6 @@
 /**
  * Programmer: Muhammed Owais 
- * Desc: Q1
+ * Desc: Q1, Board Marker Class
  * Date: 09/02/2024
  * Roll-No: 23K-0047
  */ 
