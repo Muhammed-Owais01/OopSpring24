@@ -4,7 +4,7 @@
 ## Scenario 1:
 
 
-## Scenario 2:![Scenario 2 Output](image.png)
+## Scenario 2:
 ![Scenario 2 Output](https://github.com/Muhammed-Owais01/OopSpring24/assets/83649329/380465c8-751f-4d7c-86d5-a0a350afdbf2)
 
 ## Scenario 3:
