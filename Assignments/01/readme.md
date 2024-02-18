@@ -4,15 +4,15 @@
 ## Scenario 1:
 
 
-## Scenario 2:
-![Scenario 2 Output](image.png)
+## Scenario 2:![Scenario 2 Output](image.png)
+![Scenario 2 Output](https://github.com/Muhammed-Owais01/OopSpring24/assets/83649329/380465c8-751f-4d7c-86d5-a0a350afdbf2)
 
 ## Scenario 3:
 
 ### Knight Movement:
-![Knight Movement Input](image-1-1.png)
-![Knight Movement Output](image-2.png)
+![Knight Movement Input](https://github.com/Muhammed-Owais01/OopSpring24/assets/83649329/84fb62fa-e1a9-4391-b7e7-30ec6fb25758)
+![Knight Movement Output](https://github.com/Muhammed-Owais01/OopSpring24/assets/83649329/b0616270-8697-48d0-b151-0dcebece45bb)
 
 ### Pawn Movement
-![Pawn Movement Input](image-3.png)
-![Pawn Movement Output](image-4.png)
+![Pawn Movement Input](https://github.com/Muhammed-Owais01/OopSpring24/assets/83649329/0cf7834d-7f76-4784-805c-32e1a8a6d0c2)
+![Pawn Movement Output](https://github.com/Muhammed-Owais01/OopSpring24/assets/83649329/9a164822-2409-40ba-8a60-264e9e88c82d)
