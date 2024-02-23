@@ -16,3 +16,6 @@
 ### Pawn Movement
 ![Pawn Movement Input](https://github.com/Muhammed-Owais01/OopSpring24/assets/83649329/0cf7834d-7f76-4784-805c-32e1a8a6d0c2)
 ![Pawn Movement Output](https://github.com/Muhammed-Owais01/OopSpring24/assets/83649329/9a164822-2409-40ba-8a60-264e9e88c82d)
+
+## Scenario 4:
+![Coaster Output](https://github.com/Muhammed-Owais01/OopSpring24/assets/83649329/f45fa233-b7fd-4176-9afb-818b8663f227)
