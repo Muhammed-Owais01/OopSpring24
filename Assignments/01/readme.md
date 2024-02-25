@@ -19,3 +19,8 @@
 
 ## Scenario 4:
 ![Coaster Output](https://github.com/Muhammed-Owais01/OopSpring24/assets/83649329/f45fa233-b7fd-4176-9afb-818b8663f227)
+
+## Scenario 5:
+![Output 1](https://github.com/Muhammed-Owais01/OopSpring24/assets/83649329/948f268b-b51c-4c3b-8893-c899bc061efc)
+![Output 2](https://github.com/Muhammed-Owais01/OopSpring24/assets/83649329/b469dd95-d039-4553-a31f-82009110316b)
+
