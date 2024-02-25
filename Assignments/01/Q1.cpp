@@ -1,3 +1,9 @@
+/**
+ * Programmer: Muhammed Owais 
+ * Desc: Scenario 1, Pet
+ * Date: 25/02/2024
+ * Roll-No: 23K-0047
+ */ 
 #include <iostream>
 #include <vector>
 
@@ -11,16 +17,21 @@ private:
 	vector<string> specialSkills;
 public:
 	Pet()
-	: healthStatus("Healthy"), hungerLevel(0), happinessLevel(10)
+	: healthStatus("Healthy"), hungerLevel(rand() % 10), happinessLevel(10)
 	{}
 	void displayPetDetails();
 	void updateHappiness();
-	void updateHealth(bool clean, bool groomed);
+	void updateHealth(bool clean, bool overEating);
 	void updateHunger(int feed);
 	void setPetName();
 	vector<string> getSpecialSkills() {return this->specialSkills;}
 	void setSpecialSkills(string skill);
+
+	// Getters
 	string getPetName() {return this->name;}
+	int getHunger() {return this->hungerLevel;}
+	int getPetHappiness() {return this->happinessLevel;}
+	string getHealthStatus() {return this->healthStatus;}
 };
 
 void Pet::displayPetDetails()
@@ -29,7 +40,7 @@ void Pet::displayPetDetails()
 	cout << "Hunger Level: " << this->hungerLevel << endl;
 	cout << "Happiness Level: " << this->happinessLevel << endl;
 	cout << "Special Skills: ";
-	for (string skills: this->specialSkills)
+	for (string skills : this->specialSkills)
 		cout << skills << " ";
 }
 
@@ -74,6 +85,8 @@ public:
 
 	void adoptPet(vector<Pet>& petList);
 	void returnPet(vector<Pet>& petList);
+	void feedPet();
+	void healthReport();
 	void displayAdoptedPets();
 };
 
@@ -119,6 +132,38 @@ void Adopter::displayAdoptedPets()
 	}
 }
 
+void Adopter::feedPet()
+{
+	int food;
+	cout << "Enter Food Amount: ";
+	cin >> food;
+	for (Pet pet : adoptedPetRecords)
+	{
+		pet.updateHunger(food);
+		pet.updateHappiness();
+		std::cout << "Name: " << pet.getPetName() << ", Hunger: " << pet.getHunger() << ", Happiness: " << pet.getPetHappiness() << endl;
+	}
+}
+
+void Adopter::healthReport()
+{
+	char cln, oE;
+	bool clean, overEating;
+	for (Pet pet : adoptedPetRecords)
+	{
+		cout << "Is Your Pet Clean(Y/N): ";
+		cin >> cln;
+		clean = (cln == 'Y') ? true : false;
+		cout << "Is Your Pet Over Eating(Y/N): ";
+		cin >> oE;
+		overEating = (oE == 'Y') ? true : false;
+
+		pet.updateHealth(clean, overEating);
+
+		std::cout << "Name: " << pet.getPetName() << ", Health Status: " << pet.getHealthStatus() << endl;
+	}
+}
+
 Pet initPet()
 {
 	Pet pet;
@@ -151,6 +196,7 @@ void showPetList(vector<Pet> petList)
 
 int main()
 {
+	cout << "Name: Muhammed Owais, Student ID: 23K-0047\n";
 	int choice;
 
 	vector<Pet> petList;
@@ -163,6 +209,8 @@ int main()
 		 << "3: Adopt A Pet\n"
 		 << "4: Show Adopted Pets\n"
 		 << "5: Return A Pet\n"
+		 << "6: Feed Your Pets\n"
+		 << "7: Maintain Your Pet\n"
 		 << "-1: Exit\n"
 		 << "Input: ";
 		cin >> choice;
@@ -184,6 +232,12 @@ int main()
 			break;
 		case 5:
 			shop.returnPet(petList);
+			break;
+		case 6:
+			shop.feedPet();
+			break;
+		case 7:
+			shop.healthReport();
 			break;
 		}
 	} while (choice != -1);
