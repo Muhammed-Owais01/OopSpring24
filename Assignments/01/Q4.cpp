@@ -146,6 +146,7 @@ public:
 };
 
 int main() {
+	cout << "Name: Muhammed Owais\nStudent ID: 23K-0047\n\n";
 	// Default constructor object
 	RollerCoaster Coaster1;
 	// Outputting all its attributes
