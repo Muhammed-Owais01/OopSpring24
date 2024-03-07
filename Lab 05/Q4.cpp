@@ -18,16 +18,6 @@ public:
 	BankAccount(string accountNumber = "0000", string accountHolderName = "", double balance = 0)
 	: accountNumber(accountNumber), accountHolderName(accountHolderName), balance(balance){}
 
-	// Getters
-	string getAccountNumber() {return this->accountNumber;}
-	string getAccountHolderName() {return this->accountHolderName;}
-	double getBalance() {return this->balance;}
-
-	// Setters
-	void setAccountNumber(string accountNumber) {this->accountNumber = accountNumber;}
-	void setAccountHolderName(string accountHolderName) {this->accountHolderName = accountHolderName;}
-	void setBalance(double balance) {this->balance = balance;}
-
 	void deposit(double amount);
 	void withdraw(double amount);
 	void display();
