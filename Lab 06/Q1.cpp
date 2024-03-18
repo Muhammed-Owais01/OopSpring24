@@ -1,3 +1,9 @@
+/**
+ * Programmer: Muhammed Owais 
+ * Desc: Q1, BankAccount
+ * Date: 18/03/2024
+ * Roll-No: 23K-0047
+ */ 
 #include <iostream>
 
 class BankAccount
