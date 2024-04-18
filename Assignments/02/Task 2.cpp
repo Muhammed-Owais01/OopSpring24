@@ -98,6 +98,7 @@ void Character::playGame(Enemy &enemy)
 int main()
 {
 	srand(time(NULL));
+	std::cout << "Muhammed Owais 23K-0047\n";
 	Character myChar(12345, "Manoq");
 	Enemy enemy(56789, "Not Manoq");
 	std::string weapon = myChar.use();
