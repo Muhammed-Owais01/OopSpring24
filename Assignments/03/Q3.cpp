@@ -194,12 +194,18 @@ int main()
     doubleResultMultiplication = doubleMatrix1 * doubleMatrix2;
 
     // Display results
+    std::cout << "IntResultAddition: \n";
     intResultAddition.display();
+    std::cout << "intResultSubtraction: \n";
     intResultSubtraction.display();
+    std::cout << "intResultMultiplication: \n";
     intResultMultiplication.display();
 
+    std::cout << "doubleResultAddition: \n";
     doubleResultAddition.display();
+    std::cout << "doubleResultSubtraction: \n";
     doubleResultSubtraction.display();
+    std::cout << "doubleResultMultiplication: \n";
     doubleResultMultiplication.display();
 
 }
